@@ -12,7 +12,7 @@ function HomeSection() {
         <div className="max-w-3xl">
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold mb-4 md:mb-6">ELEGAN & PREMIUM</h1>
           <p className="text-lg sm:text-xl lg:text-md mb-6 md:mb-8">Discover Luxury Living - Find Your Dream Home Today</p>
-          <button className="rounded text-black text-md sm:text-lg py-2 px-4 sm:py-3 sm:px-6 bg-white hover:bg-gray-100 transition-colors duration-300">More Information</button>
+          <button className="rounded text-black text-md sm:text-lg py-2 px-4 sm:py-3 sm:px-6 bg-white hover:bg-gray-100 transition-colors duration-300 cursor-pointer">More Information</button>
         </div>
       </div>
     </div>
