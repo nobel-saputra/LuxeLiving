@@ -6,7 +6,7 @@ export default function Card1() {
       <div className={`${poppins}`}>
         <div className="max-w-sm rounded-xl overflow-hidden shadow-2xl bg-[#f8f4e1]">
           {/* Card Image */}
-          <Image className="w-full" src="/images/properties/card-1-image.png" alt="Sunset in the mountains" width={400} height={300} />
+          <Image className="w-full" src="/images/properties/card-1.png" alt="Sunset in the mountains" width={400} height={300} />
           <div className="px-6 py-4">
             {/* Text Card */}
             <p className="font-medium text-xl ms-1 mb-4">Modern House</p>
