@@ -1,23 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { Image, Link, Search, poppins, Menu } from "../../lib/ui";
-import ButtonKu from "../atoms/Button";
-import NavLinkDeks from "../organism/navbar/navLinkDeks";
-import NavLinkMob from "../organism/navbar/navLinkMob";
+import { poppins, Menu, KodeKananNavbar } from "../../lib/ui";
+import { NavLinkDeks, NavLinkMob } from "../organism/navLink";
+import LogoImage from "../atoms/LogoImage";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className={`bg-[#F8F4E1] text-[#212529] p-4 ${poppins.className}`}>
+    <nav className={`bg-[#F8F4E1] sticky top-0 z-50 shadow-2xl text-[#212529] p-4 ${poppins.className}`}>
       <div className="container mx-auto">
         {/* Desktop Navigation */}
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="lg:pl-4">
-            <Image src="/images/logo/LuxeLiving-light-mode-logo.png" alt="Logo" width={120} height={120} priority />
-          </div>
+          <LogoImage />
 
           {/* Hamburger Menu untuk Mobile */}
           <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -28,14 +25,7 @@ export default function Navbar() {
           <NavLinkDeks />
 
           {/* Kanan - Desktop */}
-          <div className="hidden md:flex items-center space-x-6 lg:pr-4">
-            <Link href="/search" className="hover:text-gray-500">
-              <Search className="h-6 w-6" />
-            </Link>
-            <Link href="/search">
-              <ButtonKu>Sell Property</ButtonKu>
-            </Link>
-          </div>
+          <KodeKananNavbar />
         </div>
 
         {/* Tampilan mobile menu */}

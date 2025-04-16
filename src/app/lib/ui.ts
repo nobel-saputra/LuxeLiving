@@ -7,10 +7,15 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// components dan icon
+// atoms
+import ButtonKu from "../components/atoms/Button";
+// molecules
+import KodeKananNavbar from "../components/molecules/navbarTools/componentKananDesk";
+
+// komponen Image, Link, dan ikon yang digunakan di seluruh aplikasi
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Menu, Locate, CircleDollarSign, Ruler, BedDouble, Bath, Car } from "lucide-react";
+import { Search, Menu, Locate, CircleDollarSign, Ruler, BedDouble, Bath, Car, Facebook, Instagram, MessageCircleHeart } from "lucide-react";
 
-// export all
-export { poppins, Image, Link, Search, Menu, Locate, CircleDollarSign, Ruler, BedDouble, Bath, Car };
+// export semua
+export { poppins, Image, Link, Search, Menu, Locate, CircleDollarSign, Ruler, BedDouble, Bath, Car, ButtonKu, KodeKananNavbar, Facebook, Instagram, MessageCircleHeart };
