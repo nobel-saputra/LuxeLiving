@@ -1,7 +1,7 @@
 import Navbar from "./components/pages/navbar";
 import HomeSection from "./components/pages/home";
 import Properties from "./components/pages/properties";
-import Aboutus from "./components/pages/aboutUs";
+import AboUtus from "./components/pages/aboutUs";
 import Selingan from "./components/pages/selingan";
 import OurtTeam from "./components/pages/ourTeam";
 import ContactUs from "./components/pages/contactUs";
@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <HomeSection />
       <Properties />
-      <Aboutus />
+      <AboUtus />
       <Selingan />
       <OurtTeam />
       <ContactUs />
